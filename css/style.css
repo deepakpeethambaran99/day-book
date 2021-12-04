@@ -1,0 +1,352 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	background-color: white; 
+	padding: 0;
+	margin: 0;
+}
+
+/*main css*/
+
+.row-background{ background-color: #a2dee729; }
+.nav-bar{
+	height: 100vh;
+	width:0;
+	transition: 800ms;
+	z-index: -1;
+}
+
+.nav-bar.extended{
+	width: 15%;
+	background: #011427;
+	padding: 10px 0px 20px 15px;
+	box-shadow: 0 1px 1px rgba(0,0,0.08);
+	transition-delay: 800ms;
+	margin:0;
+	z-index: 1;
+	top:0;
+	position: sticky;
+}
+
+.menu-btn{
+	height:50px;
+	width:50px;
+	margin: 5px;
+	background: transparent;
+	transition: 1s;
+	padding: 5px;
+	cursor: pointer;
+	float:left;
+}
+
+.header{
+	background: white;
+	box-shadow: 0 1px 3px #195897;
+	height: atuo;
+	padding: 5px;
+	top:0;
+}
+
+.header.login a{
+	text-decoration: none;
+	color: black;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #011427;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  transform: rotate(45deg) translate(-4px, -8px);
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.nav-bar .nav-link{
+	opacity: 0;
+}
+
+.nav-bar.extended .nav-link{
+	height: auto;
+	color: #00ceffd4; 
+	border-bottom: 1px solid rgba(0,123,255,.25);;
+	padding: 5px 30px;
+	margin: 1px;
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity 3s;
+}
+
+.nav-bar .nav-link:hover{
+	background: #00a4ff0a;
+	color: #009fff;
+	text-shadow: 0px 1px 2px white;
+}
+
+.nav-bar a:hover{ text-decoration: none; }
+.brand, .profile{
+	align-content: center;
+	align-self: center;
+	text-align: center;
+}
+
+.header .col-sm-1{
+	float:left;
+}
+.profilt{float:right;}
+.profile a img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.profile a:hover{ font-weight: bold; }
+
+.content{
+	height: auto;
+	width: 100%;
+	margin-top: 2%;
+	padding: 5%;
+	background-color: white;
+}
+
+.center{
+	align-content: center;
+	text-align: center;
+	align-items: center;
+}
+.content img{
+	height:250px;
+	width:250px;
+	margin: 5px;
+	border: 10px solid #8080801a;
+}
+
+.content a{
+	font-size: 30px;
+	padding: 5px;
+}
+
+.footer{
+	border-top: 1px solid #19589794;
+	background-color: white;
+}
+
+.brand img{
+	height: 100%;
+	width: 20%;
+}
+
+
+/* login-signup page css*/
+
+.header.login{
+	height: 100px;
+	padding: 6px 60px;
+	padding-top: 45px;
+	color: #292950;
+}
+
+.header.login h3{
+	bottom: 0;
+	vertical-align: bottom;
+}
+
+.form-box{
+	background:#a2dee729;
+}
+.form-box .form{
+	background: white;
+	height: auto;
+	width: 50%;
+	margin: 38px auto;
+	box-shadow: 0px 0px 4px #195897,
+				0px 0px 6px #007bff52;
+}
+
+.toggle-btn{
+	background-color: white;
+	border-bottom: 1.5px solid #007bff52;
+}
+
+.toggle-btn .btn{ color:#195897; }
+.toggle-btn .btn.focus{ text-shadow: 0px 0px 1px #195897,
+				0px 0px 6px #007bff52; }
+.form-control.btn{ background:#6fd7e0a6; }
+.form-control.btn:hover{background:rgba(0, 123, 255, 0.78); 
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:none;
+    border-bottom: 3px solid #49acc3b0;
+    border-radius: 5px;
+}
+.separator{ border-bottom: 1px solid #17a2b838;  height:0; width: 100%;}
+
+
+.addnotebook{
+	height: 30px;
+	width: 200px;
+	background-color:#00ceff5e;
+	color:#ffffffa1;
+	border: 2.5px solid #0016ff1a;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.addnotebook:hover{
+	background-color:#00ceff87;
+}
+
+.notebook{
+	height: 500px;
+	width: 400px;
+	background: #0069ffbf;
+	margin:5px;
+	padding: 5%;
+	box-shadow: 6px -4px 2px #c3c9ea, 
+				10px -7px 2px #d4e0ed78, 
+				9px -5px 0px 0px #ebe0e0, 
+				18px -10px 1px #f7e7e787, 
+				14px -8px 1px #1089e3,
+				inset 20px -9px 20px 20px #6067a069;
+
+	border-left: 30px solid #0000008f;
+	border-radius: 10px;
+}
+
+.notebookpannel{
+	margin: 1%;
+	padding: 5%;
+	background-color: white;
+}
+
+.notebook .jdetail{
+	height: auto;
+	width: 90%;
+	margin: 5%;
+	background:#ffffff61;
+	position: relative;
+}
+
+.jdetail-head{
+	padding:5px;
+	text-align: center;
+}
+
+.jdetail-body{
+	border-top: 1px solid #1e7e34ad;
+	text-align:left;
+	padding: 5px 10px;
+}
+
+.jdetail-body a{ font-size: 1em; color:black; text-decoration: none; }
+.entry-title,.userprofile{
+	height:auto;
+	width: 100%;
+	margin-top:2%;
+	padding: 30px;
+	background: white;
+	box-shadow: 0px 0px 20px #21121236;
+}
+.entry-title .form-control.select, .journal-page .form-control.select,.userprofile .form-control.select{
+	width: 50%;
+	border:none;
+	border-radius: 0;
+	border-bottom : 1px solid #35bcdc;
+}
+
+.search{
+	height: auto;
+	width: 50%;
+	margin-top: 4px;
+	border-bottom: 1px solid #35bcdc;
+}
+
+.form-control-sm{
+	width:70%;
+}
+
+.search .form-control:focus,.journal-page .form-control,.userprofile .form-control:focus{ box-shadow: none; }
+.search input{ border:none; }
+
+.entry-table{
+	height: auto;
+	margin-top: 5px;
+	padding: 10px;
+	box-shadow: 0px 0px 20px #21121236;
+	background: white;
+}
+
+.journal-page{
+	height: 900px;
+	width: 100%;
+	margin-top: 4%;
+	padding: 5%;
+	background-color: white;
+	box-shadow: 0px 0px 20px #21121236;
+}
+
+.journal-page .form-control.title{ height: 50px; font-size: 1.5em; }
+.text-inline{
+	height: 90%;
+	width: 100%;
+}
+
+.userprofile .label{margin: 6px; }
+.userprofile .btn{ border-bottom: none; }
+.userprofile #editprofile:hover{ text-decoration: underline; }
+.userprofile .form-control.form-control-sm{ margin: 6px; width: 90%; }
+.userprofile.change-password .form-control.form-control-sm{ margin: 6px; width: 50%; }
+
+/*avatar*/
+
+.avatar{
+	height: 200px;
+	width: 200px;
+	margin-top: 50px;
+	position: relative;
+	margin-right: 50px;
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	border-radius: 50%; 
+	background-color:#b1b1b1;
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px #b1b1b1;
+}
+.avatar-upload-btn{ height: auto; width: auto; 
+	display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    float: right;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.imagePreview{
+	 width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+}
+.avatar-upload-btn:hover{ background:#dae0e5; }
+.userprofile .separator{ width: 50%; }
+.upload-btn{ width: auto; margin-left: 60px; margin-top: 30px;}
+.error{ color: red; border-left: 2px solid red; padding-left: 5px; }
